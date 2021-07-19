@@ -24,7 +24,7 @@ INPUT_NOISE = np.diag([1.0, np.deg2rad(30.0)]) ** 2
 GPS_NOISE = np.diag([0.5, 0.5]) ** 2
 
 DT = 0.1  
-SIM_TIME = 75.0  
+SIM_TIME = 70.0  
 
 show_animation = True
 
@@ -140,7 +140,7 @@ def plot_covariance_ellipse(xEst, PEst):
     fx = rot @ (np.array([x, y]))
     px = np.array(fx[0, :] + xEst[0, 0]).flatten()
     py = np.array(fx[1, :] + xEst[1, 0]).flatten()
-    plt.plot(px, py, "--r")
+    plt.plot(px, py, color='turquoise', linewidth=3,linestyle=(0, (5, 2, 1, 2)), dash_capstyle='round')
 
 
 def main():
