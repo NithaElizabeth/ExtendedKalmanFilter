@@ -16,4 +16,9 @@ pip install -r requirements.txt
 ```
 After this launch the program
 ```
-pyton EKF.py
+python EKF.py
+
+## Author
+The system was developed by Nitha Elizabeth John.
+Author  : Nitha Elizabeth John\
+Contact : nithaelizabethjohn@gmail.com
