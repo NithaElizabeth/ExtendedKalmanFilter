@@ -7,6 +7,7 @@ from scipy.spatial.transform import Rotation as Rot
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 
 
 
@@ -176,21 +177,23 @@ def main():
         hz = np.hstack((hz, z))
 
         if show_animation:
+            
             plt.cla()
-           
+        
             plt.gcf().canvas.mpl_connect('key_release_event',
                     lambda event: [exit(0) if event.key == 'escape' else None])
-            plt.plot(hz[0, :], hz[1, :], ".g")
+            plt.plot(hz[0, :], hz[1, :], ".m")
             plt.plot(hxTrue[0, :].flatten(),
-                     hxTrue[1, :].flatten(), "-b")
+                    hxTrue[1, :].flatten(), "-b")
             plt.plot(hxDR[0, :].flatten(),
-                     hxDR[1, :].flatten(), "-k")
+                    hxDR[1, :].flatten(), "-k")
             plt.plot(hxEst[0, :].flatten(),
-                     hxEst[1, :].flatten(), "-r")
+                    hxEst[1, :].flatten(), "-y")
             plot_covariance_ellipse(xEst, PEst)
             plt.axis("equal")
             plt.grid(True)
             plt.pause(0.001)
+            
 
 
 if __name__ == '__main__':
