@@ -4,4 +4,4 @@ The EKF algorithm is more realistic in non-linear systems as most systems are no
 
 ![Figure_1](https://user-images.githubusercontent.com/47361086/126139029-70769bd1-f440-427b-b9ce-89614aab5589.png)
 
-The figure above depicts the sensor fusion localization with Extended Kalman Filter(EKF). The blue line is true trajectory, the black line is dead reckoning trajectory, the green point is positioning observations, and the red line is estimated trajectory with EKF. The magenta ellipse is estimated covariance ellipse with EKF.
+The figure above depicts the sensor fusion localization with Extended Kalman Filter(EKF). The blue line is true trajectory, the black line is dead reckoning trajectory, the magenta points are positioning observations, and the yellow line is estimated trajectory with EKF. The turqoise ellipse is estimated covariance ellipse with EKF.
