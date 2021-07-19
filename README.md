@@ -3,3 +3,5 @@ Localization of mobile robots plays a vital role in trying to comprehend the beh
 The EKF algorithm is more realistic in non-linear systems as most systems are non-linear in the field of autonomous engineering, which has an autonomous white noise in both the system and the estimation model.
 
 ![Figure_1](https://user-images.githubusercontent.com/47361086/126139029-70769bd1-f440-427b-b9ce-89614aab5589.png)
+
+The figure above depicts the sensor fusion localization with Extended Kalman Filter(EKF). The blue line is true trajectory, the black line is dead reckoning trajectory, the green point is positioning observations, and the red line is estimated trajectory with EKF. The magenta ellipse is estimated covariance ellipse with EKF.
